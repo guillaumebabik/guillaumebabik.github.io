@@ -1,0 +1,4 @@
+baseURL = 'https://guillaumebabik.github.io/'
+languageCode = 'fr-FR'
+title = 'LMR Consulting'
+theme = 'ananke'
