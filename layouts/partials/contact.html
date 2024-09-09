@@ -1,0 +1,29 @@
+{{ if .Site.Data.homepage.contact.enable }}
+<section id="contact" class="section section--contact pt-0">
+    <div class="container">
+        <div class="contact">
+            <h2>{{ .Site.Data.homepage.contact.title }}</h2>
+            <div class="row pt-2">
+                <div class="col-12 col-lg-7">
+                    <!-- Début de widget en ligne Calendly -->
+                    <div class="calendly-inline-widget"
+                        data-url="https://calendly.com/guillaumebabik/30min-avec-guillaume?hide_event_type_details=1"
+                        style="min-width:320px;height:700px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
+                        async></script>
+                    <!-- Fin de widget en ligne Calendly -->
+                </div>
+                <div class="col-12 col-lg-5 contact__info">
+                    <iframe
+                        data-tally-src="https://tally.so/embed/3lWNK6?alignLeft=1&transparentBackground=1&hideTitle=1&dynamicHeight=1"
+                        loading="lazy" width="100%" height="200" frameborder="0" marginheight="0" marginwidth="0"
+                        title="Contactez moi"></iframe>
+                    <script>var d = document, w = "https://tally.so/widgets/embed.js", v = function () { "undefined" != typeof Tally ? Tally.loadEmbeds() : d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function (e) { e.src = e.dataset.tallySrc })) }; if ("undefined" != typeof Tally) v(); else if (d.querySelector('script[src="' + w + '"]') == null) { var s = d.createElement("script"); s.src = w, s.onload = v, s.onerror = v, d.body.appendChild(s); }</script>
+                    <h3>{{ .Site.Data.homepage.contact.email.title }}</h3>
+                    <span>{{ .Site.Data.homepage.contact.email.email | safeHTML }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

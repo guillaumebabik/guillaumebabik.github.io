@@ -1,0 +1,103 @@
+# page title
+head:
+  title: "Architecte Cloud AWS & Kubernetes | 20 ans d'expertise en infrastructures Cloud"
+  description: "Architecte Cloud certifié AWS avec plus de 20 ans d'expérience. Spécialiste en Kubernetes, infrastructures as code (Terraform), CI/CD, migration Cloud et optimisation FinOps. Contactez-moi pour transformer vos infrastructures Cloud."
+# showcase
+showcase:
+  enable: true
+  title: "Architecte Cloud AWS et Kubernetes"
+  subtitle: "Plus de 20 ans d'expertise Cloud. Simplifiez et optimisez votre infrastructure."
+  description: >
+    <strong>Vous recherchez un expert Cloud pour piloter vos projets AWS et Kubernetes ?</strong><br/>
+    Avec plus de 20 ans d'expérience, je conçois, implémente et optimise vos architectures cloud.<br/>
+    Certifié <strong>AWS Solution Architect</strong>, j'accompagne des entreprises de tous secteurs dans la transformation et l'optimisation de leur infrastructure.
+  image:
+    x: "images/showcase/showcase.png"
+    _2x: "images/showcase/showcase@2x.png"
+  imageMobile:
+    x: "images/showcase/showcase-mobile.jpg"
+
+  button:
+    icon: "icon-mail-fill"
+    btnText: "Contactez-moi pour discuter de votre projet Cloud"
+    URL: "#contact"
+
+  socialLinks:
+    - icon: "linkedin"
+      URL: "https://www.linkedin.com/in/babikguillaume/"
+
+# about
+about:
+  enable: true
+  title: "À propos de moi"
+  content: >
+    <p class="lead">
+      Je suis <strong>Guillaume BABIK</strong>, Architecte Cloud avec plus de 20 ans d'expérience, spécialisé sur AWS et Kubernetes.
+    </p>
+    <p class="lead">
+      Mon expertise couvre un large éventail de technologies, et j'ai eu l'opportunité de collaborer avec des entreprises de renommée telles que <strong>Carrefour</strong>, <strong>Europcar</strong>, <strong>Hertz</strong>, et <strong>Mr.Bricolage</strong>.
+    </p>
+    <p class="lead">
+      Je suis passionné par la <strong>transformation digitale</strong> et l'optimisation des architectures Cloud. Mon approche se concentre sur l'accompagnement de mes clients à chaque étape de leurs projets, avec un souci constant de <strong>transparence</strong> et de <strong>pédagogie</strong>.
+    </p>
+    <p class="lead">
+      Ensemble, nous pouvons transformer vos infrastructures pour les rendre plus <strong>agiles</strong>, <strong>scalables</strong> et <strong>économiquement optimisées</strong>.
+    </p>
+    <p class="lead">
+      Certifications :<br/>
+        - <strong>AWS Certified Solution Architect</strong><br/>
+        - Expertise Kubernetes, Terraform, CI/CD (Ansible, Jenkins, GitLab CI)
+    </p>
+  button:
+    icon: "icon-smile-fill"
+    btnText: "Vous voulez en savoir plus ?"
+    URL: "https://www.linkedin.com/in/babikguillaume/"
+  button2:
+    icon: "icon-profile-fill"
+    btnText: "Télécharger mon CV"
+    URL: "cv/CV_Guillaume_BABIK.pdf"
+  image:
+    x: "images/who-am-i/user-picture.png"
+    _2x: "images/who-am-i/user-picture@2x.png"
+
+# services
+services:
+  enable: true
+  title: "Services"
+  items:
+    - title: "Architectures Cloud"
+      content: "Je conçois et implémente des infrastructures as code avec <strong>Terraform</strong>, garantissant une infrastructure évolutive, sécurisée et reproductible."
+    - title: "Kubernetes & Containers"
+      content: "Je gère la <strong>containerisation</strong> de vos applications avec <strong>Docker</strong>, ainsi que le déploiement et la maintenance de vos <strong>clusters Kubernetes</strong>."
+    - title: "Migration vers le Cloud"
+      content: "J'accompagne votre entreprise dans la migration de vos infrastructures legacy vers des environnements Cloud pour améliorer scalabilité et résilience."
+    - title: "FinOps & Optimisation de coûts"
+      content: "Je vous aide à optimiser vos coûts d'exploitation Cloud en adoptant une démarche <strong>FinOps</strong>."
+    - title: "Pipelines CI/CD"
+      content: "Je mets en place et maintiens des pipelines d'intégration continue et de déploiement continu (CI/CD) avec <strong>Ansible</strong>, <strong>Jenkins</strong>, et <strong>GitLab CI</strong>, pour une livraison plus rapide et plus fiable."
+    - title: "Sécurité & Fiabilité"
+      content: "J'analyse la <strong>sécurité</strong> et la <strong>fiabilité</strong> de vos architectures pour garantir leur robustesse."
+
+# Client & Work
+client_and_work:
+  title: "Références"
+  enable: true
+
+# contact
+contact:
+  enable: true
+  title: "Contact"
+  form:
+    action: "#"
+    full_name: "Votre nom"
+    email: "Votre addresse e-mail"
+    message: "Votre message"
+  phone:
+    title: "Téléphone"
+    number: '<a href="tel:+33 6 87 02 20 68">+33 6 87 02 20 68</a>'
+  email:
+    title: "Email"
+    email: '<a href="mailto:guillaume@lmrconsulting.cloud">guillaume@lmrconsulting.cloud</a>'
+  button:
+    icon: "icon-mail-fill"
+    btnText: "Envoyer"
