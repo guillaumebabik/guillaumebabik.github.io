@@ -1,6 +1,6 @@
 ---
 date: '2024-08-25T10:22:34+02:00' # date in which the content is created - defaults to "today"
-title: 'Kanba'
+title: 'Mr.Bricolage'
 draft: false # set to "true" if you want to hide the content 
 
 link: "https://www.mr-bricolage.re/" # optional URL to link the logo to

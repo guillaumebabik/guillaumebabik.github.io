@@ -11866,7 +11866,7 @@ html body {
 
 @media (min-width: 768px) {
     .clients {
-        margin-left: -50px;
+        /* margin-left: -50px; */
     }
 }
 
