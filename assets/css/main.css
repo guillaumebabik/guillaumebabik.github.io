@@ -11585,12 +11585,12 @@ br {
 }
 
 .contact {
-    padding: 60px 30px;
+    padding: 40px 30px;
 }
 
 @media (min-width: 768px) {
     .contact {
-        padding: 100px 80px;
+        padding: 40px 80px;
     }
 }
 
@@ -11993,8 +11993,8 @@ textarea:focus {
 
 .section {
     position: relative;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .section--border-bottom::after {
@@ -12033,13 +12033,13 @@ textarea:focus {
 
 @media (min-width: 992px) {
     .section {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        /* padding-top: 80px; */
+        /* padding-bottom: 80px; */
     }
 
     .section .row.row--padded {
-        margin-top: 80px;
-        margin-bottom: 80px;
+        /* margin-top: 80px; */
+        /* margin-bottom: 80px; */
     }
 
     .section div[class*="col-"].rad-col-text h2 {

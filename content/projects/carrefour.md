@@ -12,7 +12,7 @@ params:
         URL: "https://www.carrefour-martinique.com/"
     image:  
         x: "images/works/carrefour.png"
-        _2x: "images/works/carrefour@2x.png"
+        _2x: "images/works/carrefour.png"
     
 
 ## The content is used for the description of the project

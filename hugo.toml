@@ -1,7 +1,11 @@
-baseURL = 'https://guillaumebabik.github.io/'
+baseURL = 'https://www.lmrconsulting.cloud/'
 languageCode = 'fr-FR'
 title = 'LMR Consulting'
 theme = 'adritian-free-hugo-theme'
+homepage = "https://www.lmrconsulting.cloud"
+demosite = ""
+
+tags = []
 
 # Plugins
 [params.plugins]
@@ -42,6 +46,11 @@ theme = 'adritian-free-hugo-theme'
   weight = 4
 
   [[menu.header]]
+  name = "Recommandations"
+  URL = "#recommandations"
+  weight = 5
+
+  [[menu.header]]
   name = "Contact"
   URL = "#contact"
   weight = 25
@@ -69,16 +78,16 @@ theme = 'adritian-free-hugo-theme'
 
 [params]
 
-  sections = ["showcase", "about", "services", "client-and-work", "contact"]
+  sections = ["showcase", "about", "services", "client-and-work", "testimonial", "contact"]
 
   homepageExperienceCount = 5
 
-  [params.google_analytics]
+  [params.analytics.google_analytics]
       code = "UA-XXXXX-Y"
       enabled = false
-  [params.google_tag_manager]
-      code = "GTM-XXXXX"
-      enabled = false
+  [params.analytics.google_tag_manager]
+      code = "GTM-WB8JVKPD"
+      enabled = true
   
   [params.logo]
     text1 = "LMR"

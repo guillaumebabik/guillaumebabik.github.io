@@ -83,6 +83,32 @@ client_and_work:
   title: "Références"
   enable: true
 
+# testimonial
+testimonial:
+  enable: true
+  title: "Recommandations"
+  items:
+    - name: "Jean-Baptiste Chauvin"
+      position: "GBH, Lead Developer Mobile"
+      content: "Je recommande chaleureusement Guillaume BABIK, qui était notre CTO chez GBH. Guillaume a fait un travail incroyable sur la partie infrastructure et DevOps. Son boulot était toujours bien documenté, ce qui a rendu les choses beaucoup plus simples pour tout le monde.<br/>Après son départ, la passation s'est super bien passée. Tout était clair et facile à reprendre grâce à ses explications détaillées. Guillaume a vraiment posé les premières pierres d'une stratégie de migration vers le cloud et d'adoption des pratiques DevOps.<br/>C'est un vrai pro, toujours méthodique et dévoué. Si vous cherchez quelqu'un pour renforcer votre équipe DevOps ou gérer votre infrastructure, Guillaume est la personne qu'il vous faut. Il apportera sans aucun doute la même expertise et le même enthousiasme à sa prochaine aventure."
+      image:
+        x: "images/testimonials/jonathan-peters.jpg"
+        _2x: "images/testimonials/jonathan-peters@2x.jpg"
+
+    - name: "Chihabeeddine Daoud"
+      position: "GBH, Lead Developer Backend"
+      content: "Je recommande vivement Guillaume Babik pour son expertise et son professionnalisme.<br/>En tant qu'Architecte Cloud et DevOps chez GBH, Guillaume a démontré une grande compétence technique et une capacité à résoudre des problèmes complexes. Son rôle crucial dans l'architecture des systèmes et l'optimisation des infrastructures a considérablement amélioré notre efficacité opérationnelle. Je suis convaincu qu'il apportera une valeur ajoutée significative à tout projet sur lequel il travaillera"
+      image:
+        x: "images/testimonials/antonio-willis.jpg"
+        _2x: "images/testimonials/antonio-willis@2x.jpg"
+
+    - name: "Lilian Alvarez"
+      position: "Lilian Alvarez Formations, CEO"
+      content: "J'ai travaillé avec Guillaume dans le cadre de son activité de freelance.<br/>Il est sérieux et très impliqué dans sa carrière et dispose de compétences techniques très pointues.<br/>Je recommande !"
+      image:
+        x: "images/testimonials/daniel-jordan.jpg"
+        _2x: "images/testimonials/daniel-jordan@2x.jpg"
+
 # contact
 contact:
   enable: true
@@ -97,7 +123,7 @@ contact:
     number: '<a href="tel:+33 6 87 02 20 68">+33 6 87 02 20 68</a>'
   email:
     title: "Email"
-    email: '<a href="mailto:guillaume@lmrconsulting.cloud">guillaume@lmrconsulting.cloud</a>'
+    email: '<a href="mailto:guillaume@lmrconsulting.cloud">guillaumebabik@lmrconsulting.cloud</a>'
   button:
     icon: "icon-mail-fill"
     btnText: "Envoyer"

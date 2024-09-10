@@ -1,7 +1,7 @@
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-<meta name="theme-color" content="#478079" >
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="theme-color" content="#478079">
 
 {{ if .Site.Params.analytics.google_tag_manager.enabled }}
 <link rel="preconnect" href="https://www.googletagmanager.com">
@@ -12,53 +12,44 @@
 
 {{ $critical := resources.Get "css/critical.css" | resources.ToCSS | resources.Minify }}
 <style data-generator="critical-css">
-{{ $critical.Content | safeCSS }}
+  {
+      {
+      $critical.Content | safeCSS
+    }
+  }
 </style>
 
 {{ $cssResources := slice }}
 {{ range .Site.Params.plugins.css }}
-    {{ if findRE "^http" .URL }}
-        <link rel="stylesheet" href="{{ .URL | absURL }}">
-    {{ else }}
-        {{ $cssFile := resources.Get .URL }}
-        {{ $cssResources = $cssResources | append $cssFile }}
-    {{ end }}
+{{ if findRE "^http" .URL }}
+<link rel="stylesheet" href="{{ .URL | absURL }}">
+{{ else }}
+{{ $cssFile := resources.Get .URL }}
+{{ $cssResources = $cssResources | append $cssFile }}
+{{ end }}
 {{ end }}
 {{ $cssBundle := $cssResources | resources.Concat "css/bundle.css" }}
 
 
 <!-- Purge CSS -->
-{{ $css := $cssBundle | resources.PostCSS }} 
-{{ if hugo.IsProduction }} 
-    {{ $css = $css | minify | fingerprint | resources.PostProcess }} 
+{{ $css := $cssBundle | resources.PostCSS }}
+{{ if hugo.IsProduction }}
+{{ $css = $css | minify | fingerprint | resources.PostProcess }}
 {{ end }}
 
-<link
-  rel="preload"
-  href="{{ $css.RelPermalink }}"
-  as="style"
-  data-generator="purgeCSS"
-  onload="this.onload=null;this.rel='stylesheet'"
-  {{ if hugo.IsProduction -}} 
-    integrity="{{ $css.Data.Integrity }}"
-  {{- end }}
-/>
+<link rel="preload" href="{{ $css.RelPermalink }}" as="style" data-generator="purgeCSS"
+  onload="this.onload=null;this.rel='stylesheet'" {{ if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" {{-
+  end }} />
 <noscript>
-  <link 
-    rel="stylesheet" 
-    href="{{ $css.RelPermalink }}"
-    {{ if hugo.IsProduction -}} 
-    integrity="{{ $css.Data.Integrity }}"
-    {{- end }}
-  />
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" {{ if hugo.IsProduction -}}
+    integrity="{{ $css.Data.Integrity }}" {{- end }} />
 </noscript>
 {{ if .Site.Params.analytics.google_tag_manager.enabled }}
 <!-- Google tag (gtag.js), google analytics -->
-<script defer src="https://www.googletagmanager.com/gtag/js?id=UA-465407-4"></script>
+<script defer src="https://www.googletagmanager.com/gtag/js?id=G-2Z7P7VBETM"></script>
 {{ $analytics := resources.Get "js/gtag.js" | resources.Minify }}
 <script defer src="{{ $analytics.Permalink }}"></script>
 {{ else }}
 <!-- no google tag displayed -->
 {{ end }}
 <script src='{{ "js/library/lozad.min.js" | absURL }}'></script>
-
